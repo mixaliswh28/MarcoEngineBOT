@@ -15,7 +15,7 @@ engine:                                   # Engine settings.
        - "Goi5_1.bin"  
 #     chess960:                           # List of names of books to use for Chess960.
 #       - "Chess960Book"
-    selection: "weighted_random"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+    selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
   pybook: 
     enabled: false                         # Activate pybook.
     book: "/path/to/pybook"               # Path to pybook.
