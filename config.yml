@@ -17,7 +17,7 @@ engine:                                   # Engine settings.
 #       - "Chess960Book"
     selection: "weighted_random"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
   pybook: 
-    enabled: false                        # Activate pybook.
+    enabled: true                         # Activate pybook.
     book: "/path/to/pybook"               # Path to pybook.
   online_moves:
     chessdb:
@@ -45,7 +45,7 @@ engine:                                   # Engine settings.
     consecutive_moves: 5                  # How many moves in a row the score has to be below the resign value.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
     Move Overhead: 150                    # Increase if your bot flags games too often.
-    Threads: 4                           # Max CPU threads the engine can use.
+    Threads: 2                           # Max CPU threads the engine can use.
     Hash: 256                             # Max memory (in megabytes) the engine can allocate.
 #   SyzygyPath: "/path/to/syzygy"         # Path to your local syzygy endgame tablebases
 
