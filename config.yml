@@ -17,7 +17,7 @@ engine:                                   # Engine settings.
 #       - "Chess960Book"
     selection: "weighted_random"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
   pybook: 
-    enabled: true                         # Activate pybook.
+    enabled: false                         # Activate pybook.
     book: "/path/to/pybook"               # Path to pybook.
   online_moves:
     chessdb:
@@ -31,7 +31,7 @@ engine:                                   # Engine settings.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
     online_egtb:
-      enabled: true                      # Activate online endgame tablebases from Lichess.
+      enabled: true                       # Activate online endgame tablebases from Lichess.
       min_time: 10                        # Time the bot must have at least to use the online move.
       timeout: 3                          # Time the server has to respond.
   offer_draw:   
