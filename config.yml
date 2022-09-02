@@ -6,10 +6,10 @@ engine:                                   # Engine settings.
   ponder: true                            # Think on opponent's time.
   polyglot: true   
     enabled: false                        # Activate polyglot book.
-    books: polyglot
-#     white: polyglot                             # List of names of books to use as white.
+    books: 
+#     white:                             # List of names of books to use as white.
 #       - "Goi5_1.bin"
-#     black:  polyglot                            # List of names of books to use as black.
+#     black:                             # List of names of books to use as black.
 #       - "Goi5_1.bin"
      standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
        - "Goi5_1.bin"  
