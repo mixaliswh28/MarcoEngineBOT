@@ -4,9 +4,9 @@ engine:                                   # Engine settings.
   dir: "./engines"                        # Directory containing the engine.
   name: "sf-12"                      # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
-  polyglot: 
+  polyglot: true 
     enabled: false                        # Activate polyglot book.
-    books:
+    books: 
 #     white:                              # List of names of books to use as white.
 #       - "Goi5_1.bin"
 #     black:                              # List of names of books to use as black.
@@ -16,7 +16,7 @@ engine:                                   # Engine settings.
 #     chess960:                           # List of names of books to use for Chess960.
 #       - "Chess960Book"
     selection: "weighted_random"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
-  pybook:
+  pybook: 
     enabled: false                        # Activate pybook.
     book: "/path/to/pybook"               # Path to pybook.
   online_moves:
@@ -25,7 +25,7 @@ engine:                                   # Engine settings.
       min_depth: 10                       # Minimum evaluation depth.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
-    lichess_cloud:
+    lichess_cloud: true 
       enabled: false                      # Activate online moves from Lichess cloud eval.
       min_depth: 10                       # Minimum evaluation depth.
       min_time: 40                        # Time the bot must have at least to use the online move.
@@ -34,7 +34,7 @@ engine:                                   # Engine settings.
       enabled: true                      # Activate online endgame tablebases from Lichess.
       min_time: 10                        # Time the bot must have at least to use the online move.
       timeout: 3                          # Time the server has to respond.
-  offer_draw: 
+  offer_draw: true 
     enabled: false                         # Activate whether the bot should offer draw.
     score: 10                             # If the absolute value of the score is less than or equal to this value, the bot offers/accepts draw (in cp)
     consecutive_moves: 10                 # How many moves in a row the absolute value of the score has to be below the draw value
@@ -88,5 +88,5 @@ matchmaking:
 # min_rating_diff: 0                      # Minimum rating distance to opponent. (Commenting allowed)
 # max_rating_diff: 300                    # Maximum rating distance to opponent. (Commenting allowed)
 
-books:                                    # Names of the opening books (to be used above in the polyglot section) and paths to the polyglot opening books.
+books: true                                     # Names of the opening books (to be used above in the polyglot section) and paths to the polyglot opening books.
   DefaultBook: "/path/to/DefaultBook.bin"
