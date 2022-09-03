@@ -2,7 +2,7 @@ token: "lip_j47mmYNwdJzvXamyVTOg"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
   dir: "./engines"                        # Directory containing the engine.
-  name: "https://github.com/mixalissideris/MarcoEngineBOT/blob/main/engines/Stockfish-master%20(2).zip"                      # Binary name of the engine to use.
+  name: "Stockfish-master (2).zip"                      # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   polyglot:   
     enabled: false                          # Activate polyglot book.
