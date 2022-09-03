@@ -5,7 +5,7 @@ engine:                                   # Engine settings.
   name: "sf-12"                      # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   polyglot:   
-    enabled: true                           # Activate polyglot book.
+    enabled: false                           # Activate polyglot book.
     books: 
 #     white:                             # List of names of books to use as white.
 #       - "Goi5_1.bin"
@@ -26,7 +26,7 @@ engine:                                   # Engine settings.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
     lichess_cloud:   
-      enabled: false                          # Activate online moves from Lichess cloud eval.
+      enabled: true                         # Activate online moves from Lichess cloud eval.
       min_depth: 10                       # Minimum evaluation depth.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
