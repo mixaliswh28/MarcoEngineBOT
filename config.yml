@@ -60,7 +60,7 @@ challenge:                                # Incoming challenges. (Commenting all
   variants:                               # Chess variants to accept (https://lichess.org/variant).
     - standard
     - chess960
-    - fromPosition
+  # - fromPosition
     - antichess
     - atomic
     - crazyhouse
