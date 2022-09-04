@@ -1,4 +1,4 @@
-token: "your_token_here"         # Lichess OAuth2 Token.
+token: "lip_5SXFwLqvMqzXDsSHX7UC"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
   dir: "./engines"                        # Directory containing the engine.
@@ -26,7 +26,7 @@ engine:                                   # Engine settings.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
     lichess_cloud:
-      enabled: false                      # Activate online moves from Lichess cloud eval.
+      enabled: true                      # Activate online moves from Lichess cloud eval.
       min_depth: 10                       # Minimum evaluation depth.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
@@ -61,20 +61,20 @@ challenge:                                # Incoming challenges. (Commenting all
     - standard
     - chess960
 #   - fromPosition
-#   - antichess
-#   - atomic
-#   - crazyhouse
-#   - horde
-#   - kingOfTheHill
-#   - racingKings
-#   - threeCheck
+    - antichess
+    - atomic
+    - crazyhouse
+    - horde
+    - kingOfTheHill
+    - racingKings
+    - threeCheck
   time_controls:                          # Time controls to accept.
     - bullet
     - blitz
     - rapid
 #   - classical
   bot_modes:                              # Game modes to accept against BOTs.
-#   - casual                              # Unrated games.
+     - casual                              # Unrated games.
     - rated                               # Rated games
   human_modes:                            # Game modes to accept against humans.
     - casual                              # Unrated games.
